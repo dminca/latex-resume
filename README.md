@@ -1,4 +1,4 @@
-# LaTeX resumes [![status-badge](https://ci.codeberg.org/api/badges/dminca/latex-resume/status.svg)](https://ci.codeberg.org/dminca/latex-resume)
+# LaTeX resumes [![CI](https://github.com/dminca/latex-resume/actions/workflows/blank.yml/badge.svg)](https://github.com/dminca/latex-resume/actions/workflows/blank.yml)
 
 > Resumes belong to me and my wife and they're automatically generated from LaTeX
 
