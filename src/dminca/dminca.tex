@@ -1,0 +1,105 @@
+% !TXS template
+\documentclass[11pt,a4paper,Hack,english]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+\moderncvstyle{banking}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{black}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+\usepackage[scale=0.75,a4paper]{geometry}
+\usepackage[super]{nth}
+%----------------------------------------------------------------------------------
+%            personal data
+%----------------------------------------------------------------------------------
+\firstname{Daniel-Andrei}%<first name%:columnShift:-1,persistent%>
+\familyname{Minc\u a}%<family name%:columnShift:-1,persistent%>
+\title{Site Reliability Engineer}%<Resumé title%:columnShift:-1,persistent%>                               % optional, remove/comment the line if not wanted
+% \address{}{}{}%<street and number%:columnShift:-5,persistent%>%<postcode city%:columnShift:-3,persistent%>%<country%:columnShift:-1,persistent%>         % optional, remove/comment the line if not wanted; the "country" arguments can be omitted or provided empty
+% \mobile{+49 16098785723}%<mobile number%:columnShift:-1,persistent%>                          % optional, remove/comment the line if not wanted
+\email{mallard-broad0q@icloud.com}%<email%:columnShift:-1,persistent%>                               % optional, remove/comment the line if not wanted
+\homepage{dminca.codeberg.page}%<home page%:columnShift:-1,persistent%>                         % optional, remove/comment the line if not wanted
+\extrainfo{Crafted in \LaTeX - Last update \today}%<additional information%:columnShift:-1,persistent%>                 % optional, remove/comment the line if not wanted
+%\photo[64pt][0.4pt]{photo2.jpg}%<picture%:columnShift:-1,persistent%>                       % optional, uncomment the line if wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+
+%
+\begin{document}
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+\section{Work experience}
+\cventry{\nth{1} Nov. 2021 -- present}{Senior Site Reliability Engineer}{GfK SE}{N\"urnberg, DE}{}
+{
+	\begin{description}
+		\item[$\bullet$] Promotion to Senior Site Reliability Engineer
+		\item[$\bullet$] Team Leading responsibilities
+	\end{description}
+}
+
+\cventry{\nth{1} Nov. 2018 -- \nth{1} Nov. 2021}{Site Reliability Engineer}{GfK SE}{N\"urnberg, DE}{}
+{
+	\begin{description}
+		\item[$\bullet$] Kubernetes, IaC, Cloud, On-Prem, GitOps, CI/CD 
+	\end{description}
+}
+
+\cventry{\nth{5} Sept. 2016 -- \nth{31} Oct. 2018}{DevOps Engineer}{Gameloft}{Bucharest, RO}{}
+{
+	\begin{description}
+		\item[$\bullet$] Infrastructure as Code implementation
+		\item[$\bullet$] Applying best practices of Configuration Management
+		\item[$\bullet$] Implementing Continous Integration and Continous Deployment + Delivery
+		\item[$\bullet$] Container Orchestration
+		\item[$\bullet$] Configure/Manage cloud Infrastructure
+		\item[$\bullet$] System Administration for both on-premise and Cloud Infrastructure
+		\item[$\bullet$] Encourage communication between siloed departments
+	\end{description}
+}
+\cventry{1 Jul. 2016 -- 5 Sept. 2016}{System Administrator}{MarketsWorld}{Bucharest, RO}{}{Implement SMS alerting for Nagios with Twilio.}
+\cventry{1 Mar. 2015 -- 1 Jul. 2016}{Ruby on Rails Developer}{MarketsWorld}{Bucharest, RO}{}
+{
+	\begin{description}
+		\item[$\bullet$] Implementing features in an Agile manner on a Forex trading platform built on Ruby on Rails.
+		\item[$\bullet$] Learning the basics of UNIX/Linux commands by debugging the Rails server on a Debian machine.
+		\item[$\bullet$] Containerize all the microservices involved in the RoR application.
+		\item[$\bullet$] Automate the local development via Bash scripts that deploy all necessary containers.
+	\end{description}
+}
+\cventry{Sept. 2010 -- 1 Jul. 2016}{Entrepreneur}{SC.COMPLET IT.SRL}{Giurgiu, RO}{}{Launched a Web Design/Development startup for
+deploying websites for numerous clients.}
+
+\section{Recent certifications}
+\cventry{\nth{29} Aug. 2021 -- \nth{10} May 2022}{Certified Kubernetes Administrator}{CNCF}{}{}{\href{https://ti-user-certificates.s3.amazonaws.com/e0df7fbf-a057-42af-8a1f-590912be5460/31a40ff8-2a6c-4a50-bb08-1e5c75869b24-daniel-andrei-minca-certified-kubernetes-administrator-cka-certificate.pdf}{verify credentials}}
+\cventry{\nth{4} Dec. 2020 -- \nth{4} Dec. 2022}{Professional Cloud Architect}{Google Cloud Platform}{}{}{\href{https://www.credential.net/b05427fb-189c-4399-9d8a-e60dda5195c4?key=4be5ed21e4f2eb561f16d1b9b2604ad2f5e83436dc98c86fc6979fd532e211e7}{verify credentials}}
+
+\section{Training}
+\cventry{10 Sept. 2014 -- 7 Feb. 2015}{Java - Distributed Systems certification}{Telecom Academy}{Bucharest, RO}{EQF Level 6}{
+	\textbf{Skills achieved:}
+	\begin{description}
+		\item[$\bullet$] developing GUI applications, multi-threaded apps, MySQL/Oracle database design
+		\item[$\bullet$] apply security principles in apps communication protocols
+		\item[$\bullet$] implement standard communication protocols HTTP, IMAP, POP3
+	\end{description}
+}%<year%:columnShift:-13,persistent%>%<year%:columnShift:-11,persistent%>%<Degree%:columnShift:-9,persistent%>%<Institution%:columnShift:-7,persistent%>%<City%:columnShift:-5,persistent%>%<Grade%:columnShift:-3,persistent%>%<Description%:columnShift:-1,persistent%>  % arguments 3 to 6 can be left empty
+\cventry{7 Nov. 2014 -- 15 Nov. 2014}{Entrepreneurial Training Workshop certification}{UNCTAD - United Nations Conference on Trade and Development}{Giurgiu}{EQF Level 6}{Gained experience in becoming more efficient, establishing challenging objectives et. al.}
+\cventry{26 May 2014 -- 15 Aug. 2014}{Java Fundamentals certification}{Telecom Academy}{Bucharest, RO}{EQF Level 6}{}
+\cventry{Jun. 2013 -- Feb. 2014}{Web Designer certification}{Crystal Mind Academy}{Bucharest, RO}{EQF Level 6}{}
+\section{Education}
+\cventry{2016 -- 2018}{IT\&C Security Masters Degree}{Faculty of Cybernetics Statistics and Economic Informatics - ASE}{Bucharest}{EQF Level 6}{}
+% \cventry{2013 -- 2015}{Masters Degree}{Faculty of Orthodox Theology - University of Bucharest}{Bucharest}{EQF Level 6}{}
+% \cventry{2009 -- 2013}{Bachelors Degree}{Faculty of Orthodox Theology - University of Bucharest}{Bucharest}{EQF Level 6}{}%<year%:columnShift:-13,persistent%>%<year%:columnShift:-11,persistent%>%<Degree%:columnShift:-9,persistent%>%<Institution%:columnShift:-7,persistent%>%<City%:columnShift:-5,persistent%>%<Grade%:columnShift:-3,persistent%>%<Description%:columnShift:-1,persistent%>
+
+\section{Master thesis}
+\cvitem{IT\&C Security Masters}{The Security of Docker Containers}%<title%:columnShift:-3,persistent%>%<Title%:columnShift:-1,persistent%>
+\cvitem{Supervisor}{Lect. Dr. TOMA Cristian}%<supervisors%:columnShift:-3,persistent%>%<Supervisors%:columnShift:-1,persistent%>
+\cvitem{Abstract}{The default Docker configuration is not as secure as it seems, and requires some tweaking. UNIX capabilities, cgroups, SELinux are good assets for hardening the Docker Engine.}%<description%:columnShift:-3,persistent%>%<Short thesis abstract%:columnShift:-1,persistent%>
+\section{Languages}
+\cvitemwithcomment{Romanian}{native}{}%<Language 3%:columnShift:-5,persistent%>%<Skill level%:columnShift:-3,persistent%>%<Comment%:columnShift:-1,persistent%>
+\cvitemwithcomment{German}{B1}{}%<Language 1%:columnShift:-5,persistent%>%<Skill level%:columnShift:-3,persistent%>%<Comment%:columnShift:-1,persistent%>
+\cvitemwithcomment{English}{C1}{}%<Language 2%:columnShift:-5,persistent%>%<Skill level%:columnShift:-3,persistent%>%<Comment%:columnShift:-1,persistent%>
+\section{Programming/scripting skills}
+Go, Python, Ruby, Bash/Shell, Groovy, Java
+\section{Technologies XP}
+\cvitem{Cloud Providers}{GCP, AWS}
+\cvitem{Configuration management}{Ansible, Puppet}
+\cvitem{Containers}{Docker, docker-compose, containerd, Kubernetes, k3d}
+\cvitem{IaC}{Terraform}
+\cvitem{CI/CD}{GoCD, GitLab CI, Jenkins, Atlassian Bamboo}
+\cvitem{Others}{Linux, Networking, VCS, Open-Source contributor}
+\end{document}

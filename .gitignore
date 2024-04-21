@@ -1,0 +1,13 @@
+*.aux
+*.log
+*.out
+*.synctex.gz
+.idea
+*.fdb_latexmk
+*.fls
+*.nav
+*.snm
+*.toc
+*.fls
+.DS_Store
+

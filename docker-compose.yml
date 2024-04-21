@@ -1,0 +1,13 @@
+version: "3.7"
+services:
+  app:
+    image: dminca/latex:v1-fat
+    container_name: text_compiler
+    stdin_open: true
+    tty: true
+    command:
+      - bash
+    volumes:
+      - type: bind
+        source: ./src
+        target: /source
