@@ -28,10 +28,9 @@ jobs:
       # https://github.com/xu-cheng/latex-action
       - uses: xu-cheng/latex-action@v3
         with:
-          working_directory: src
           root_file: |
-            dminca/dminca.tex
-            kubecon/main.tex
+            src/dminca/dminca.tex
+            src/kubecon/main.tex
 
 # TODO: make this work
 # https://github.com/actions/upload-artifact
