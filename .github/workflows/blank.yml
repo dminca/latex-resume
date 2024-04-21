@@ -29,8 +29,8 @@ jobs:
       - uses: xu-cheng/latex-action@v3
         with:
           root_file: |
-            src/dminca/dminca.text
-            src/kubecon/main.text
+            src/dminca/dminca.tex
+            src/kubecon/main.tex
 
 # TODO: make this work
 # https://github.com/actions/upload-artifact
