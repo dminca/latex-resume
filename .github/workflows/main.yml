@@ -6,14 +6,11 @@ on:
     branches: [ "main" ]
   workflow_dispatch:
 permissions:
-  pull-requests: write
+  contents: write
   id-token: write
 jobs:
   build:
     runs-on: ubuntu-latest
-    concurrency:
-      group: main
-      cancel-in-progress: true
     steps:
       - uses: actions/checkout@v3
       - uses: xu-cheng/latex-action@v3
