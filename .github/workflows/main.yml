@@ -6,7 +6,7 @@ on:
     branches: [ "main" ]
   workflow_dispatch:
 permissions:
-  pull-request: write
+  pull-requests: write
   id-token: write
 jobs:
   build:
