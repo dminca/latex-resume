@@ -6,21 +6,26 @@ on:
     branches: [ "main" ]
   workflow_dispatch:
 permissions:
-  contents: write
+  pull-requests: write
   id-token: write
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: xu-cheng/latex-action@v3
+      - name: Perform compilation
+        uses: xu-cheng/latex-action@v3
         with:
           root_file: |
             src/dminca/dminca.tex
             src/kubecon/main.tex
-      - name: Push PDFs
+      - name: Add only PDFs to git
         run: |
           git add -f *.pdf
-          git -c user.name='LaTeX-builder' -c user.email='LaTeX-builder' commit -m "chore(ci): update pdf"
-          git push -q -f https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v6
+        with:
+            token: ${{ secrets.GITHUB_TOKEN }}
+            title: chore(ci): update PDFs
+            branch: update-dependencies
 
