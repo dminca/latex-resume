@@ -1,4 +1,4 @@
-# LaTeX resumes [![CI](https://github.com/dminca/latex-resume/actions/workflows/blank.yml/badge.svg?branch=main)](https://github.com/dminca/latex-resume/actions/workflows/blank.yml)
+# LaTeX resumes [![CI](https://github.com/dminca/latex-resume/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/dminca/latex-resume/actions/workflows/main.yml)
 
 > Resume automatically generated from LaTeX
 
