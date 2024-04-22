@@ -1,0 +1,23 @@
+name: CI
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: xu-cheng/latex-action@v3
+        with:
+          root_file: |
+            src/dminca/dminca.tex
+            src/kubecon/main.tex
+      - name: Push PDFs
+        run: |
+          git add -f *.pdf
+          git -c user.name='resume-maker' -c user.email='resume-maker' commit -m "chore: update pdf"
+          git push -q -f https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+
