@@ -8,6 +8,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    concurrency:
+      group: main
+      cancel-in-progress: true
     steps:
       - uses: actions/checkout@v3
       - uses: xu-cheng/latex-action@v3
