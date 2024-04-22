@@ -26,6 +26,6 @@ jobs:
         uses: peter-evans/create-pull-request@v6
         with:
             token: ${{ secrets.GITHUB_TOKEN }}
-            title: chore(ci): update PDFs
+            title: "chore(ci): update PDFs"
             branch: update-dependencies
 
