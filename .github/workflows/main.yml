@@ -6,7 +6,7 @@ on:
     branches: [ "main" ]
   workflow_dispatch:
 permissions:
-  contents: write
+  pull-request: write
   id-token: write
 jobs:
   build:
@@ -24,6 +24,6 @@ jobs:
       - name: Push PDFs
         run: |
           git add -f *.pdf
-          git -c user.name='resume-maker' -c user.email='resume-maker' commit -m "chore: update pdf"
+          git -c user.name='LaTeX-builder' -c user.email='LaTeX-builder' commit -m "chore(ci): update pdf"
           git push -q -f https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
 
