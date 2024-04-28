@@ -33,4 +33,6 @@ jobs:
             token: ${{ secrets.GITHUB_TOKEN }}
             title: "chore(ci): update PDFs"
             branch: update-dependencies
+            assignees: dminca
+            reviewers: dminca
 
