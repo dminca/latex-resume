@@ -36,4 +36,4 @@ jobs:
             assignees: dminca
             reviewers: dminca
             delete-branch: true
-
+            base: main
